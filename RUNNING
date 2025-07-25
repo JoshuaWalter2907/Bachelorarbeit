@@ -1,0 +1,26 @@
+##############################################################################
+## Running the HPL-NVIDIA Benchmark
+The HPL-NVIDIA benchmark uses the same input format as the standard Netlib  HPL
+benchmark. Please see the Netlib HPL benchmark for getting started with the HPL
+software concepts and best practices.
+
+The HPL-NVIDIA expects one GPU per MPI process. As such, set the number of  MPI
+processes to match the number of available GPUs in the cluster.
+
+The script hpl.sh can be invoked on a command line or  through  a  slurm  batch-
+script to launch the HPL-NVIDIA benchmark. The script hpl.sh accepts the follow-
+ing parameters:
+--dat      path to HPL.dat.
+
+Optional parameters:
+--gpu-affinity <string>     colon separated list of gpu indices
+--cpu-affinity <string>     colon separated list of cpu index ranges
+--mem-affinity <string>     colon separated list of memory indices
+--ucx-affinity <string>     colon separated list of UCX devices
+--ucx-tls <string>          UCX transport to use
+--exec-name <string>        HPL or HPL-AI executable file
+--cuda-compat               manually enable CUDA forward compatibility
+--no-multinode              enable flags for no-multinode (no-network) execution
+
+Command line examples for HPL-NVIDIA benchmark can be foung on HPC Benchmarks
+NGC web-page: https://catalog.ngc.nvidia.com/orgs/nvidia/containers/hpc-benchmarks

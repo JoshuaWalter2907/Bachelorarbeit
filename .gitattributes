@@ -1,0 +1,2 @@
+lib/nccl/libnccl.so.2.25.1 filter=lfs diff=lfs merge=lfs -text
+lib/nvshmem/libnvshmem_host.so.3.2.5 filter=lfs diff=lfs merge=lfs -text
