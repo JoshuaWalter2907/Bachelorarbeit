@@ -1,8 +1,6 @@
 #!/bin/bash
 export LC_NUMERIC=C   # Fix locale-related decimal issues
 
-# === Konfiguration ===
-
 if [ -z "$1" ]; then
     echo "Please enter the problem Size. Example: ./plot.sh 40000"
     exit 1
