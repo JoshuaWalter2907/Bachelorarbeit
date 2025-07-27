@@ -29,7 +29,7 @@ FIELDS=(
     "ups.temperature"
 )
 
-# CSV-Header erstellen falls nicht vorhanden
+# Create CSV Header if not available
 if [ ! -f "$CSV_FILE" ]; then
     {
         echo -n "timestamp"
@@ -55,20 +55,20 @@ log_data() {
     done
 }
 
-# --- 10 Sekunden Vorerfassung ---
+# --- 10 Seconds measurments before the Benchmark ---
 PRE_END_TIME=$(( $(date +%s) + 10 ))
 log_data "$PRE_END_TIME"
 
-# --- HPL-2GPUs.dat anpassen ---
+# --- Edit HPL file with the entered problem size ---
 HPL_DAT_FILE="HPL-2GPUs.dat"
 if [ -f "$HPL_DAT_FILE" ]; then
     sed -i -E "s/^([[:space:]]*)[0-9]+([[:space:]]+Ns)/\1$RUN_ID\2/" "$HPL_DAT_FILE"
 else
-    echo "❌ Fehler: $HPL_DAT_FILE nicht gefunden."
+    echo "Error: $HPL_DAT_FILE not found."
     exit 1
 fi
 
-# --- Benchmark starten ---
+# --- start benchmark ---
 BENCHMARK_END_FILE="/tmp/benchmark_end_$RUN_ID"
 rm -f "$BENCHMARK_END_FILE"
 
@@ -77,16 +77,15 @@ rm -f "$BENCHMARK_END_FILE"
     touch "$BENCHMARK_END_FILE"
 ) &
 
-# --- Während Benchmark läuft weiter loggen ---
+# --- continue logging whilst Benchmark is running ---
 while [ ! -f "$BENCHMARK_END_FILE" ]; do
-    # Logge für 1 Sekunde weiter (ein Intervall)
     INTERVAL_END=$(( $(date +%s) + INTERVAL ))
     log_data "$INTERVAL_END"
 done
 
-# --- 10 Sekunden Nacherfassung ---
+# --- 10 measurement after the Benchmark is finished ---
 POST_END_TIME=$(( $(date +%s) + 10 ))
 log_data "$POST_END_TIME"
 
-echo "✅ Logging abgeschlossen. Datei: $CSV_FILE"
+echo "Logging done. File: $CSV_FILE"
 
