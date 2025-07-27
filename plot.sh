@@ -11,7 +11,7 @@ fi
 RUN_ID="$1"
 CSV_FILE="${RUN_ID}_N_NO_NCCL.csv"
 
-INTERVAL=1                    # Logging-Intervall in Sekunden (ganzzahlig)
+INTERVAL=1  # Logging Interval                 
 UPS_NAME="eaton-ups"
 UPS_IP="172.20.38.30"
 
