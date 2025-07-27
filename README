@@ -6,23 +6,34 @@ HPL - 2.1 - October 26, 2012
 ===============================================================================
 
 HPL-NVIDIA is a software package that solves a (random) dense linear system in
-double precision (64 bits) arithmetic on distributed-memory computers equipped
+double precision (64-bit) arithmetic on distributed-memory computers equipped
 with NVIDIA GPUs, based on the netlib HPL benchmark.
 
 The HPL-NVIDIA software package is provided in a self-contained NVIDIA 
-HPL-Benchmarks NGC container collection with all dependencies provided.
+HPL-Benchmarks NGC container collection with all dependencies included.
 
-Running  See the file RUNNING in this directory.
-------
+Running:
+  See the file RUNNING in this directory.
 
-Tuning  See the file TUNING in this directory.
-------
+Tuning:
+  See the file TUNING in this directory.
 
-Check out the website NGC Catalog 
-(https://www.nvidia.com/en-us/gpu-cloud/containers/) for the
-latest information. Look for HPC-Benchmarks collection.
+For the latest information, check the NGC Catalog:
+  https://www.nvidia.com/en-us/gpu-cloud/containers/
+  Look for the HPC-Benchmarks collection.
 
 ===============================================================================
+Additional Script for Benchmark Logging
+===============================================================================
 
-**Note:**  
-*In this repository, modifications have been made to the benchmark startup process to improve the size of the repository*
+This repository includes a custom Bash script (`plot.sh`) that enhances the 
+benchmarking process by:
+
+1. **Setting the problem size (N)** for the HPL benchmark dynamically.
+2. **Logging power and UPS metrics** from a connected UPS system before, 
+   during, and after the benchmark.
+3. **Storing results** in a CSV file for later analysis.
+
+### Usage
+```bash
+./plot.sh <Problem_Size>
