@@ -4,7 +4,7 @@ export LC_NUMERIC=C   # Fix locale-related decimal issues
 # === Konfiguration ===
 
 if [ -z "$1" ]; then
-    echo "❌ Fehler: Bitte eine Zahl als Parameter angeben. Beispiel: ./script.sh 42"
+    echo "Please enter the problem Size. Example: ./plot.sh 40000"
     exit 1
 fi
 
