@@ -30,10 +30,11 @@ This repository includes a custom Bash script (`plot.sh`) that enhances the
 benchmarking process by:
 
 1. **Setting the problem size (N)** for the HPL benchmark dynamically.
-2. **Logging power and UPS metrics** from a connected UPS system before, 
+2. **Setting the commincation Library for the HPL benchmark dynamically (NCCL/ NVSHMEM).
+3. **Logging power and UPS metrics** from a connected UPS system before, 
    during, and after the benchmark.
-3. **Storing results** in a CSV file for later analysis.
+4. **Storing results** in a CSV file for later analysis.
 
 ### Usage
 ```bash
-./plot.sh <Problem_Size>
+./plot.sh <Problem_Size> <Library>
