@@ -1,0 +1,173 @@
+NVSHMEM: 512
+
+In-core cols          41984 (MIN)      43520 (MAX)      42752 (AVG)
+Out-of-core cols      36352 (MIN)      37888 (MAX)      37120 (AVG)
+--- MEMORY INFO ---
+DEVICE
+  System           =      2.82292 GiB (MIN)      3.20506 GiB (MAX)      3.01399 GiB (AVG)
+  HPL buffers      =     16.63874 GiB (MIN)     17.09577 GiB (MAX)     16.86726 GiB (AVG)
+  Used             =     19.84380 GiB (MIN)     19.91869 GiB (MAX)     19.88125 GiB (AVG)
+  Total            =     19.99512 GiB (MIN)     19.99512 GiB (MAX)     19.99512 GiB (AVG)
+HOST
+  HPL buffers      =     10.81673 GiB (MIN)     11.27377 GiB (MAX)     11.04525 GiB (AVG)
+-------------------
+
+
+T/V                N    NB     P     Q         Time          Gflops (   per GPU)
+--------------------------------------------------------------------------------
+WC0            79872   512     2     1       449.50       7.557e+02 ( 3.779e+02)
+
+HPL_pdgesv() start time Sat Aug 16 16:38:06 2025
+HPL_pdgesv() end time   Sat Aug 16 16:45:35 2025
+
+
+In-core cols          48640 (MIN)      50176 (MAX)      49408 (AVG)
+Out-of-core cols      19456 (MIN)      20992 (MAX)      20224 (AVG)
+--- MEMORY INFO ---
+DEVICE
+  System           =      2.92073 GiB (MIN)      3.30287 GiB (MAX)      3.11180 GiB (AVG)
+  HPL buffers      =     16.66559 GiB (MIN)     17.06403 GiB (MAX)     16.86481 GiB (AVG)
+  Used             =     19.96846 GiB (MIN)     19.98476 GiB (MAX)     19.97661 GiB (AVG)
+  Total            =     19.99512 GiB (MIN)     19.99512 GiB (MAX)     19.99512 GiB (AVG)
+HOST
+  HPL buffers      =      5.04717 GiB (MIN)      5.44560 GiB (MAX)      5.24638 GiB (AVG)
+-------------------
+
+
+T/V                N    NB     P     Q         Time          Gflops (   per GPU)
+--------------------------------------------------------------------------------
+WC0            69632   512     2     1       298.13       7.550e+02 ( 3.775e+02)
+
+HPL_pdgesv() start time Sat Aug 16 16:48:51 2025
+HPL_pdgesv() end time   Sat Aug 16 16:53:49 2025
+
+
+In-core cols          59392 (MIN)      59904 (MAX)      59648 (AVG)
+Out-of-core cols          0 (MIN)        512 (MAX)        256 (AVG)
+[WARNING] OOC mode enabled but matrix fits entirely in device memory on all ranks, consider setting HPL_OOC_MODE=0
+--- MEMORY INFO ---
+DEVICE
+  System           =      2.51071 GiB (MIN)      2.89285 GiB (MAX)      2.70178 GiB (AVG)
+  HPL buffers      =     17.09872 GiB (MIN)     17.44052 GiB (MAX)     17.26962 GiB (AVG)
+  Used             =     19.95123 GiB (MIN)     19.99157 GiB (MAX)     19.97140 GiB (AVG)
+  Total            =     19.99512 GiB (MIN)     19.99512 GiB (MAX)     19.99512 GiB (AVG)
+HOST
+  HPL buffers      =      0.00026 GiB (MIN)      0.11354 GiB (MAX)      0.05690 GiB (AVG)
+-------------------
+
+T/V                N    NB     P     Q         Time          Gflops (   per GPU)
+--------------------------------------------------------------------------------
+WC0            59904   512     2     1       187.82       7.630e+02 ( 3.815e+02)
+
+HPL_pdgesv() start time Sat Aug 16 16:56:36 2025
+HPL_pdgesv() end time   Sat Aug 16 16:59:44 2025
+
+
+In-core cols          49664 (MIN)      49664 (MAX)      49664 (AVG)
+Out-of-core cols          0 (MIN)          0 (MAX)          0 (AVG)
+[WARNING] OOC mode enabled but matrix fits entirely in device memory on all ranks, consider setting HPL_OOC_MODE=0
+--- MEMORY INFO ---
+DEVICE
+  System           =      2.60852 GiB (MIN)      2.99066 GiB (MAX)      2.79959 GiB (AVG)
+  HPL buffers      =     12.95369 GiB (MIN)     13.14315 GiB (MAX)     13.04842 GiB (AVG)
+  Used             =     15.75167 GiB (MIN)     15.94435 GiB (MAX)     15.84801 GiB (AVG)
+  Total            =     19.99512 GiB (MIN)     19.99512 GiB (MAX)     19.99512 GiB (AVG)
+HOST
+  HPL buffers      =      0.00022 GiB (MIN)      0.00022 GiB (MAX)      0.00022 GiB (AVG)
+-------------------
+
+
+T/V                N    NB     P     Q         Time          Gflops (   per GPU)
+--------------------------------------------------------------------------------
+WC0            49664   512     2     1       106.99       7.633e+02 ( 3.817e+02)
+
+HPL_pdgesv() start time Sat Aug 16 17:06:42 2025
+HPL_pdgesv() end time   Sat Aug 16 17:08:29 2025
+
+
+In-core cols          39936 (MIN)      39936 (MAX)      39936 (AVG)
+Out-of-core cols          0 (MIN)          0 (MAX)          0 (AVG)
+[WARNING] OOC mode enabled but matrix fits entirely in device memory on all ranks, consider setting HPL_OOC_MODE=0
+--- MEMORY INFO ---
+DEVICE
+  System           =      2.70438 GiB (MIN)      3.08652 GiB (MAX)      2.89545 GiB (AVG)
+  HPL buffers      =      9.70517 GiB (MIN)      9.70517 GiB (MAX)      9.70517 GiB (AVG)
+  Used             =     12.40954 GiB (MIN)     12.79168 GiB (MAX)     12.60061 GiB (AVG)
+  Total            =     19.99512 GiB (MIN)     19.99512 GiB (MAX)     19.99512 GiB (AVG)
+HOST
+  HPL buffers      =      0.00018 GiB (MIN)      0.00018 GiB (MAX)      0.00018 GiB (AVG)
+-------------------
+
+
+T/V                N    NB     P     Q         Time          Gflops (   per GPU)
+--------------------------------------------------------------------------------
+WC0            39936   512     2     1        56.80       7.476e+02 ( 3.738e+02)
+
+HPL_pdgesv() start time Sat Aug 16 17:10:01 2025
+HPL_pdgesv() end time   Sat Aug 16 17:10:58 2025
+
+
+In-core cols          29696 (MIN)      29696 (MAX)      29696 (AVG)
+Out-of-core cols          0 (MIN)          0 (MAX)          0 (AVG)
+[WARNING] OOC mode enabled but matrix fits entirely in device memory on all ranks, consider setting HPL_OOC_MODE=0
+--- MEMORY INFO ---
+DEVICE
+  System           =      2.80218 GiB (MIN)      3.18433 GiB (MAX)      2.99326 GiB (AVG)
+  HPL buffers      =      6.95076 GiB (MIN)      6.95076 GiB (MAX)      6.95076 GiB (AVG)
+  Used             =      9.75295 GiB (MIN)     10.13509 GiB (MAX)      9.94402 GiB (AVG)
+  Total            =     19.99512 GiB (MIN)     19.99512 GiB (MAX)     19.99512 GiB (AVG)
+HOST
+  HPL buffers      =      0.00014 GiB (MIN)      0.00014 GiB (MAX)      0.00014 GiB (AVG)
+-------------------
+
+
+T/V                N    NB     P     Q         Time          Gflops (   per GPU)
+--------------------------------------------------------------------------------
+WC0            29696   512     2     1        23.60       7.399e+02 ( 3.700e+02)
+
+HPL_pdgesv() start time Sat Aug 16 17:12:31 2025
+HPL_pdgesv() end time   Sat Aug 16 17:12:55 2025
+
+
+In-core cols          19968 (MIN)      19968 (MAX)      19968 (AVG)
+Out-of-core cols          0 (MIN)          0 (MAX)          0 (AVG)
+[WARNING] OOC mode enabled but matrix fits entirely in device memory on all ranks, consider setting HPL_OOC_MODE=0
+--- MEMORY INFO ---
+DEVICE
+  System           =      2.89217 GiB (MIN)      3.27431 GiB (MAX)      3.08324 GiB (AVG)
+  HPL buffers      =      5.02256 GiB (MIN)      5.09874 GiB (MAX)      5.06065 GiB (AVG)
+  Used             =      7.99091 GiB (MIN)      8.29687 GiB (MAX)      8.14389 GiB (AVG)
+  Total            =     19.99512 GiB (MIN)     19.99512 GiB (MAX)     19.99512 GiB (AVG)
+HOST
+  HPL buffers      =      0.00011 GiB (MIN)      0.00011 GiB (MAX)      0.00011 GiB (AVG)
+-------------------
+
+
+T/V                N    NB     P     Q         Time          Gflops (   per GPU)
+--------------------------------------------------------------------------------
+WC0            19968   512     2     1         7.14       7.437e+02 ( 3.719e+02)
+
+HPL_pdgesv() start time Sat Aug 16 17:14:27 2025
+HPL_pdgesv() end time   Sat Aug 16 17:14:34 2025
+
+
+In-core cols           9728 (MIN)       9728 (MAX)       9728 (AVG)
+Out-of-core cols          0 (MIN)          0 (MAX)          0 (AVG)
+[WARNING] OOC mode enabled but matrix fits entirely in device memory on all ranks, consider setting HPL_OOC_MODE=0
+--- MEMORY INFO ---
+DEVICE
+  System           =      2.48025 GiB (MIN)      2.86239 GiB (MAX)      2.67132 GiB (AVG)
+  HPL buffers      =      3.82085 GiB (MIN)      3.85797 GiB (MAX)      3.83941 GiB (AVG)
+  Used             =      6.33822 GiB (MIN)      6.68325 GiB (MAX)      6.51073 GiB (AVG)
+  Total            =     19.99512 GiB (MIN)     19.99512 GiB (MAX)     19.99512 GiB (AVG)
+HOST
+  HPL buffers      =      0.00007 GiB (MIN)      0.00007 GiB (MAX)      0.00007 GiB (AVG)
+-------------------
+
+
+T/V                N    NB     P     Q         Time          Gflops (   per GPU)
+--------------------------------------------------------------------------------
+WC0             9728   512     2     1         0.98       6.247e+02 ( 3.124e+02)
+
+HPL_pdgesv() start time Sat Aug 16 17:15:19 2025
+HPL_pdgesv() end time   Sat Aug 16 17:15:20 2025
